@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 27 Maj 2020, 17:30
+-- Czas generowania: 27 Maj 2020, 19:35
 -- Wersja serwera: 10.4.11-MariaDB
 -- Wersja PHP: 7.4.5
 
@@ -42,7 +42,9 @@ INSERT INTO `autorzy` (`id_autor`, `imie`, `nazwisko`) VALUES
 (2, 'Terry', 'Pratchet'),
 (3, 'Dimitry', 'Gluchovsky'),
 (4, 'Henryk ', 'Sienkiewicz'),
-(5, 'William', 'King');
+(5, 'William', 'King'),
+(11, 'Duch', 'Święty'),
+(12, 'Do', 'Usunięcia');
 
 -- --------------------------------------------------------
 
@@ -65,7 +67,9 @@ INSERT INTO `krzyz` (`id_krzyz`, `id_autor`, `id_tytul`) VALUES
 (2, 2, 2),
 (3, 3, 3),
 (4, 4, 4),
-(5, 5, 5);
+(5, 5, 5),
+(8, 11, 8),
+(9, 12, 9);
 
 -- --------------------------------------------------------
 
@@ -88,7 +92,9 @@ INSERT INTO `tytuly` (`id_tytul`, `tytul`, `isbn`) VALUES
 (2, 'Kolor magii', 269),
 (3, 'Metro 2033', 233),
 (4, 'Potop', 443),
-(5, 'Illidian', 123);
+(5, 'Illidian', 123),
+(8, 'Biblia', 901),
+(9, 'Test', 583);
 
 --
 -- Indeksy dla zrzutów tabel
@@ -122,19 +128,19 @@ ALTER TABLE `tytuly`
 -- AUTO_INCREMENT dla tabeli `autorzy`
 --
 ALTER TABLE `autorzy`
-  MODIFY `id_autor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_autor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT dla tabeli `krzyz`
 --
 ALTER TABLE `krzyz`
-  MODIFY `id_krzyz` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_krzyz` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT dla tabeli `tytuly`
 --
 ALTER TABLE `tytuly`
-  MODIFY `id_tytul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_tytul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Ograniczenia dla zrzutów tabel
