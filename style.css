@@ -1,3 +1,40 @@
-body {
-color: black;
+.cont{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.sider{
+    background:lightskyblue;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainer{
+    background:lightsalmon;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table, td, th{
+    border: solid 1px purple;
+    font-size: 30px;
+    border-collapse: collapse;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    background: yellow;
+}
+.row:nth-child(odd){
+    background: plum;
 }
